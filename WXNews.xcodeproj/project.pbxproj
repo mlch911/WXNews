@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		281FC85B1CBC13DC1B36FD09 /* Pods_WXNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47E4A29F884AAA7D96E6BCB /* Pods_WXNews.framework */; };
+		F7B259821F306A5000D64AB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B259811F306A5000D64AB0 /* AppDelegate.swift */; };
+		F7B259841F306A5000D64AB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B259831F306A5000D64AB0 /* ViewController.swift */; };
+		F7B259871F306A5000D64AB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7B259851F306A5000D64AB0 /* Main.storyboard */; };
+		F7B2598A1F306A5000D64AB0 /* WXNews.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7B259881F306A5000D64AB0 /* WXNews.xcdatamodeld */; };
+		F7B2598C1F306A5000D64AB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7B2598B1F306A5000D64AB0 /* Assets.xcassets */; };
+		F7B2598F1F306A5000D64AB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7B2598D1F306A5000D64AB0 /* LaunchScreen.storyboard */; };
+		F7B2599B1F30855C00D64AB0 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B2599A1F30855C00D64AB0 /* Network.swift */; };
+		F7B2599D1F308B8D00D64AB0 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B2599C1F308B8D00D64AB0 /* Category.swift */; };
+		F7B2599F1F30EC8600D64AB0 /* NewsListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B2599E1F30EC8600D64AB0 /* NewsListController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		28C48D97F366C50CF4287B88 /* Pods-WXNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WXNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-WXNews/Pods-WXNews.release.xcconfig"; sourceTree = "<group>"; };
+		EF4121F68B81933C766A130D /* Pods-WXNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WXNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WXNews/Pods-WXNews.debug.xcconfig"; sourceTree = "<group>"; };
+		F47E4A29F884AAA7D96E6BCB /* Pods_WXNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WXNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7B2597E1F306A5000D64AB0 /* WXNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WXNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7B259811F306A5000D64AB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F7B259831F306A5000D64AB0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F7B259861F306A5000D64AB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F7B259891F306A5000D64AB0 /* WXNews.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WXNews.xcdatamodel; sourceTree = "<group>"; };
+		F7B2598B1F306A5000D64AB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F7B2598E1F306A5000D64AB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F7B259901F306A5000D64AB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7B2599A1F30855C00D64AB0 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		F7B2599C1F308B8D00D64AB0 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		F7B2599E1F30EC8600D64AB0 /* NewsListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsListController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F7B2597B1F306A5000D64AB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				281FC85B1CBC13DC1B36FD09 /* Pods_WXNews.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		541C75D8CF07FA5D0AE0F922 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF4121F68B81933C766A130D /* Pods-WXNews.debug.xcconfig */,
+				28C48D97F366C50CF4287B88 /* Pods-WXNews.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DB432B4D0AC1F0F24B3C121B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F47E4A29F884AAA7D96E6BCB /* Pods_WXNews.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F7B259751F306A5000D64AB0 = {
+			isa = PBXGroup;
+			children = (
+				F7B259801F306A5000D64AB0 /* WXNews */,
+				F7B2597F1F306A5000D64AB0 /* Products */,
+				541C75D8CF07FA5D0AE0F922 /* Pods */,
+				DB432B4D0AC1F0F24B3C121B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F7B2597F1F306A5000D64AB0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7B2597E1F306A5000D64AB0 /* WXNews.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7B259801F306A5000D64AB0 /* WXNews */ = {
+			isa = PBXGroup;
+			children = (
+				F7B259811F306A5000D64AB0 /* AppDelegate.swift */,
+				F7B259831F306A5000D64AB0 /* ViewController.swift */,
+				F7B259851F306A5000D64AB0 /* Main.storyboard */,
+				F7B2599E1F30EC8600D64AB0 /* NewsListController.swift */,
+				F7B2599A1F30855C00D64AB0 /* Network.swift */,
+				F7B2599C1F308B8D00D64AB0 /* Category.swift */,
+				F7B2598B1F306A5000D64AB0 /* Assets.xcassets */,
+				F7B2598D1F306A5000D64AB0 /* LaunchScreen.storyboard */,
+				F7B259901F306A5000D64AB0 /* Info.plist */,
+				F7B259881F306A5000D64AB0 /* WXNews.xcdatamodeld */,
+			);
+			path = WXNews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F7B2597D1F306A5000D64AB0 /* WXNews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7B259931F306A5000D64AB0 /* Build configuration list for PBXNativeTarget "WXNews" */;
+			buildPhases = (
+				8372DEDD40C1FCFC2526CDB6 /* [CP] Check Pods Manifest.lock */,
+				F7B2597A1F306A5000D64AB0 /* Sources */,
+				F7B2597B1F306A5000D64AB0 /* Frameworks */,
+				F7B2597C1F306A5000D64AB0 /* Resources */,
+				3A739330B3ED98BA9DD37A14 /* [CP] Embed Pods Frameworks */,
+				B9078ABECF38D8E8B2736458 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WXNews;
+			productName = WXNews;
+			productReference = F7B2597E1F306A5000D64AB0 /* WXNews.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F7B259761F306A5000D64AB0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "闵罗琛";
+				TargetAttributes = {
+					F7B2597D1F306A5000D64AB0 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F7B259791F306A5000D64AB0 /* Build configuration list for PBXProject "WXNews" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F7B259751F306A5000D64AB0;
+			productRefGroup = F7B2597F1F306A5000D64AB0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F7B2597D1F306A5000D64AB0 /* WXNews */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F7B2597C1F306A5000D64AB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7B2598F1F306A5000D64AB0 /* LaunchScreen.storyboard in Resources */,
+				F7B2598C1F306A5000D64AB0 /* Assets.xcassets in Resources */,
+				F7B259871F306A5000D64AB0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A739330B3ED98BA9DD37A14 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WXNews/Pods-WXNews-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8372DEDD40C1FCFC2526CDB6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B9078ABECF38D8E8B2736458 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WXNews/Pods-WXNews-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7B2597A1F306A5000D64AB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7B2599F1F30EC8600D64AB0 /* NewsListController.swift in Sources */,
+				F7B2598A1F306A5000D64AB0 /* WXNews.xcdatamodeld in Sources */,
+				F7B2599D1F308B8D00D64AB0 /* Category.swift in Sources */,
+				F7B259841F306A5000D64AB0 /* ViewController.swift in Sources */,
+				F7B2599B1F30855C00D64AB0 /* Network.swift in Sources */,
+				F7B259821F306A5000D64AB0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F7B259851F306A5000D64AB0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7B259861F306A5000D64AB0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F7B2598D1F306A5000D64AB0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7B2598E1F306A5000D64AB0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F7B259911F306A5000D64AB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F7B259921F306A5000D64AB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F7B259941F306A5000D64AB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF4121F68B81933C766A130D /* Pods-WXNews.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WXNews/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tech.mluoc.WXNews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F7B259951F306A5000D64AB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28C48D97F366C50CF4287B88 /* Pods-WXNews.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WXNews/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tech.mluoc.WXNews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F7B259791F306A5000D64AB0 /* Build configuration list for PBXProject "WXNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7B259911F306A5000D64AB0 /* Debug */,
+				F7B259921F306A5000D64AB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7B259931F306A5000D64AB0 /* Build configuration list for PBXNativeTarget "WXNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7B259941F306A5000D64AB0 /* Debug */,
+				F7B259951F306A5000D64AB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F7B259881F306A5000D64AB0 /* WXNews.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F7B259891F306A5000D64AB0 /* WXNews.xcdatamodel */,
+			);
+			currentVersion = F7B259891F306A5000D64AB0 /* WXNews.xcdatamodel */;
+			path = WXNews.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F7B259761F306A5000D64AB0 /* Project object */;
+}
